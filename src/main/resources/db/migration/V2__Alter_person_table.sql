@@ -1,0 +1,1 @@
+ALTER TABLE person rename COLUMN name TO username;
