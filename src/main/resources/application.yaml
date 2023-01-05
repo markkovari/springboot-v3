@@ -5,8 +5,10 @@ spring:
     username: root
     password: asdasd
   jpa:
-    hibernate.ddl-auto: update
+    hibernate.ddl-auto: validate
     generate-ddl: true
     show-sql: true
   flyway:
-    enabled: false
+    enabled: true
+    baseline-version: 1
+    baseline-on-migrate: true

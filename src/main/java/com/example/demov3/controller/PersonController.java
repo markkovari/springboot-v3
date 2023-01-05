@@ -1,7 +1,7 @@
-package com.example.demov3.controllers;
+package com.example.demov3.controller;
 
-import com.example.demov3.models.Person;
-import com.example.demov3.services.PersonService;
+import com.example.demov3.model.Person;
+import com.example.demov3.service.PersonService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

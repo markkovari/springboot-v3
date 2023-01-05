@@ -1,6 +1,6 @@
-package com.example.demov3.services;
+package com.example.demov3.service;
 
-import com.example.demov3.models.Person;
+import com.example.demov3.model.Person;
 
 import java.util.List;
 

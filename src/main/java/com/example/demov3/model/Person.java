@@ -1,4 +1,4 @@
-package com.example.demov3.models;
+package com.example.demov3.model;
 
 import jakarta.persistence.*;
 

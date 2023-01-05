@@ -1,7 +1,7 @@
-package com.example.demov3.services;
+package com.example.demov3.service;
 
-import com.example.demov3.models.Person;
-import com.example.demov3.repositories.PersonRepository;
+import com.example.demov3.model.Person;
+import com.example.demov3.repository.PersonRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

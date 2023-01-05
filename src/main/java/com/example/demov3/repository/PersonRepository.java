@@ -1,6 +1,6 @@
-package com.example.demov3.repositories;
+package com.example.demov3.repository;
 
-import com.example.demov3.models.Person;
+import com.example.demov3.model.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PersonRepository extends JpaRepository<Person, Long> {
