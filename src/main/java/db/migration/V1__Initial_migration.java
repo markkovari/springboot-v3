@@ -1,14 +1,15 @@
 package db.migration;
 
-import org.flywaydb.core.api.migration.BaseJavaMigration;
-import org.flywaydb.core.api.migration.Context;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.datasource.SingleConnectionDataSource;
+import db.BaseMigration;
+import org.jooq.DSLContext;
+import org.jooq.impl.SQLDataType;
 
-public class V1__Initial_migration extends BaseJavaMigration {
-    public void migrate(Context context) {
-        new JdbcTemplate(
-                new SingleConnectionDataSource(context.getConnection(), true)
-        ).execute("create table person (id bigint not null, name varchar(255), primary key (id)) engine=InnoDB");
+public class V1__Initial_migration extends BaseMigration {
+    @Override
+    public void migrate(DSLContext dslContext) {
+        dslContext.createTableIfNotExists("person")
+                .column("id", SQLDataType.BIGINT.identity(true))
+                .column("name", SQLDataType.VARCHAR(255))
+                .execute();
     }
 }
