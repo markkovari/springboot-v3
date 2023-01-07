@@ -3,6 +3,7 @@ package com.example.demov3.models;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "person")
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
